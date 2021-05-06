@@ -1,8 +1,7 @@
-import react from 'react';
 import logo from './logo.png';
 import './login.css';
 
-function App() {
+function reset_senha() {
   return (
     <div className="App">
       <header className="App-header">
@@ -11,21 +10,13 @@ function App() {
         </div>
         <br></br>
         <td>
-          Login
+          Email
         </td>
-        <input className='App-login'type="text" name="Nome" size="40" /> 
-        <br/> 
-        <td>
-          Senha
-        </td>
-        <input className='App-login'type="text" name="Nome" size="40" />
-        <br></br>
-        <button className = "App-enter">Entrar</button>
-        <br></br>
         <button className = "App-enter">Esqueci minha senha</button>
       </header>
     </div>
+        
   );
 }
 
-export default App;
+export default reset_senha;
