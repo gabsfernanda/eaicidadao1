@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {AreaHeader} from './styled';
 
 function Header(){
@@ -11,10 +12,13 @@ function Header(){
           <nav>
               <ul>
                   <li>
-                      Configurações
+                      <Link to = "/"> Inicio </Link> 
                   </li>
                   <li>
-                      Sair
+                      <Link to = "/config"> Configuração </Link> 
+                  </li>
+                  <li>
+                      <Link to = "/"> Logout </Link> 
                   </li>
               </ul>
           </nav>
