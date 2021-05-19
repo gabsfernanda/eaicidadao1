@@ -1,72 +1,33 @@
 import React from 'react';
 import { ContainerPage, TitlePage } from '../../components/Main';
-
+import { Link } from 'react-router-dom';
+import './home.css';
 
 const Page = () => {
-    return(
-        <ContainerPage>
-            <TitlePage>
-                Seja Bem vindo
-            </TitlePage>
-            <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit lobortis duis varius potenti fusce 
-                commodo libero phasellus, eget porttitor ut per elementum ornare nascetur praesent cras 
-                tincidunt eros placerat luctus. Pellentesque velit quam ultricies auctor justo aenean habitant
-                , semper finibus augue arcu vel nulla, litora elit netus iaculis magna venenatis. Neque natoque
-                 nam imperdiet primis consequat gravida, sem suspendisse tortor vestibulum dictum ante, vivamus 
-                 luctus leo ipsum vel. Primis ad tristique rhoncus purus consequat rutrum nam, platea praesent 
-                 nunc scelerisque dignissim habitant. Ac tellus iaculis dignissim feugiat enim cras arcu, bibendum
-                  facilisi placerat viverra volutpat tempor tristique pulvinar, vel est urna nec blandit eu.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit lobortis duis varius potenti fusce 
-                commodo libero phasellus, eget porttitor ut per elementum ornare nascetur praesent cras 
-                tincidunt eros placerat luctus. Pellentesque velit quam ultricies auctor justo aenean habitant
-                , semper finibus augue arcu vel nulla, litora elit netus iaculis magna venenatis. Neque natoque
-                 nam imperdiet primis consequat gravida, sem suspendisse tortor vestibulum dictum ante, vivamus 
-                 luctus leo ipsum vel. Primis ad tristique rhoncus purus consequat rutrum nam, platea praesent 
-                 nunc scelerisque dignissim habitant. Ac tellus iaculis dignissim feugiat enim cras arcu, bibendum
-                  facilisi placerat viverra volutpat tempor tristique pulvinar, vel est urna nec blandit eu.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit lobortis duis varius potenti fusce 
-                commodo libero phasellus, eget porttitor ut per elementum ornare nascetur praesent cras 
-                tincidunt eros placerat luctus. Pellentesque velit quam ultricies auctor justo aenean habitant
-                , semper finibus augue arcu vel nulla, litora elit netus iaculis magna venenatis. Neque natoque
-                 nam imperdiet primis consequat gravida, sem suspendisse tortor vestibulum dictum ante, vivamus 
-                 luctus leo ipsum vel. Primis ad tristique rhoncus purus consequat rutrum nam, platea praesent 
-                 nunc scelerisque dignissim habitant. Ac tellus iaculis dignissim feugiat enim cras arcu, bibendum
-                  facilisi placerat viverra volutpat tempor tristique pulvinar, vel est urna nec blandit eu.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit lobortis duis varius potenti fusce 
-                commodo libero phasellus, eget porttitor ut per elementum ornare nascetur praesent cras 
-                tincidunt eros placerat luctus. Pellentesque velit quam ultricies auctor justo aenean habitant
-                , semper finibus augue arcu vel nulla, litora elit netus iaculis magna venenatis. Neque natoque
-                 nam imperdiet primis consequat gravida, sem suspendisse tortor vestibulum dictum ante, vivamus 
-                 luctus leo ipsum vel. Primis ad tristique rhoncus purus consequat rutrum nam, platea praesent 
-                 nunc scelerisque dignissim habitant. Ac tellus iaculis dignissim feugiat enim cras arcu, bibendum
-                  facilisi placerat viverra volutpat tempor tristique pulvinar, vel est urna nec blandit eu.
-            </p>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit lobortis duis varius potenti fusce 
-                commodo libero phasellus, eget porttitor ut per elementum ornare nascetur praesent cras 
-                tincidunt eros placerat luctus. Pellentesque velit quam ultricies auctor justo aenean habitant
-                , semper finibus augue arcu vel nulla, litora elit netus iaculis magna venenatis. Neque natoque
-                 nam imperdiet primis consequat gravida, sem suspendisse tortor vestibulum dictum ante, vivamus 
-                 luctus leo ipsum vel. Primis ad tristique rhoncus purus consequat rutrum nam, platea praesent 
-                 nunc scelerisque dignissim habitant. Ac tellus iaculis dignissim feugiat enim cras arcu, bibendum
-                  facilisi placerat viverra volutpat tempor tristique pulvinar, vel est urna nec blandit eu.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit lobortis duis varius potenti fusce 
-                commodo libero phasellus, eget porttitor ut per elementum ornare nascetur praesent cras 
-                tincidunt eros placerat luctus. Pellentesque velit quam ultricies auctor justo aenean habitant
-                , semper finibus augue arcu vel nulla, litora elit netus iaculis magna venenatis. Neque natoque
-                 nam imperdiet primis consequat gravida, sem suspendisse tortor vestibulum dictum ante, vivamus 
-                 luctus leo ipsum vel. Primis ad tristique rhoncus purus consequat rutrum nam, platea praesent 
-                 nunc scelerisque dignissim habitant. Ac tellus iaculis dignissim feugiat enim cras arcu, bibendum
-                  facilisi placerat viverra volutpat tempor tristique pulvinar, vel est urna nec blandit eu.
-            </p>
-            </div>
-        </ContainerPage>
+  return (
+    <div className="home">
+      
+    <ContainerPage>
+      <TitlePage>
+        Entrar
+      </TitlePage>
+      <p>
+        <input  name="email" placeholder="Email" type="email" />
+      </p>
+      <p>
+        <input  name="senha" placeholder="Senha" type="password" />
+      </p>
+      <button className="btn">Entrar</button>
+      <br/>
+      <br/>
+      <Link to = "/config"> Esqueci minha senha </Link>
+      <br />
+      <br />
+      <Link className="link" to="/config"> Cadastrar </Link>
+    </ContainerPage>
 
-    );
+  
+    </div>
+  );
 }
 export default Page;
