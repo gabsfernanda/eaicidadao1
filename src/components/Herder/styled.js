@@ -11,25 +11,26 @@ export const AreaHeader = styled.div`
        align-items: center;
    }
 nav{      
-        ul{
-             display: flex;
-             align-items: auto;
-        }
-        li{
-            list-style: none;
-            margin-left: 20px;
-    
-            a{
-                text-decoration: none;
-                color: #fff;
-                display: flex;
-                align-items: center;
-    
-                &:hover{
-                    color: #9370DB;
-                }
+    ul{
+        margin-left: 970%;
+        display: flex;
+
+    }
+    li{
+        list-style: none;
+        margin-left:40px;
+
+        a{
+            text-decoration: none;
+            color: #fff;
+            display: flex;
+            align-items: center;
+
+            &:hover{
+                color: #9370DB;
             }
         }
-    
-    
-    `;
+    }
+
+
+`;

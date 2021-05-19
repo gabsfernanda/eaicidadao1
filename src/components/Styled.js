@@ -11,7 +11,7 @@ export const BtnDeFauIcons = styled.div`
     outline: none;
     font-size: 16px;
     font-weight: bold;
-    mardin-bottom: 15px;
+    margin-bottom: 15px;
     transition: 0.4s;
 
     &:hover{

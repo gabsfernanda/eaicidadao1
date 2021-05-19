@@ -8,18 +8,14 @@ import './App.css'
 
 function App() {
 
-  const [user, setUser] = useState({
-    id:1,
-    name:'Thais',
-    avatar: ''
-  });
+  // eslint-disable-next-line no-unused-vars
+  const [user, setUser ] = useState (null);
 
   if(user === null){
     return(
-      <Login />
-    )
+      <Login/>
+    );
   }
-
 
   return (
     <BrowserRouter>
@@ -31,3 +27,4 @@ function App() {
 }
 
 export default App;
+

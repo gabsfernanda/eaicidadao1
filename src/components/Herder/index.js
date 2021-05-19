@@ -1,4 +1,4 @@
-import { Link } from '@material-ui/core';
+import {Link} from 'react-router-dom';
 import React from 'react';
 import {AreaHeader} from './styled';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
@@ -12,11 +12,11 @@ function Header(){
           <div className="logo">
             <h2>Eai Cidadão</h2>
           </div>
-          
+
           <nav>
           <ul>
               <li>
-                  <Link to = "/"> <MailOutlineIcon/> </Link>
+                  <Link to = "/Home"> <MailOutlineIcon/> </Link>
               </li>
           </ul>
       </nav>
