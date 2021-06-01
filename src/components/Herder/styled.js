@@ -10,7 +10,8 @@ export const AreaHeader = styled.div`
        display: flex;
        align-items: center;
    }
-nav{      
+nav{     
+    display: flex; 
     ul{
         margin-left: 970%;
         display: flex;
@@ -31,6 +32,5 @@ nav{
             }
         }
     }
-
-
+}
 `;

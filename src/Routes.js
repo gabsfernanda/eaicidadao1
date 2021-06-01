@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route} from 'react-router-dom';
 import Home from './pages/Home';
-import Config from './pages/config';
+import Config from './pages/Perfil';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {

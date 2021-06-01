@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import Api from '../../Api';
 import { AreaLogin } from './styled';
 import { BtnDeFauIcons, BtnDeFau } from '../../components/Styled';
 import FacebookIcon from '@material-ui/icons/Facebook';
@@ -8,7 +9,30 @@ import { IoLogoGoogle } from "react-icons/io5";
  
 
 // eslint-disable-next-line import/no-anonymous-default-export
-export default () => {
+export default ({onReceiveGoogle}, {onReceiveFacebook}) => {
+
+    const actionLoginGoogle = async () => {
+        let result = await Api.googleLogar();
+
+        if (result){
+            onReceiveGoogle(result.user);
+        }
+        else {
+            alert ('Error');
+        }
+    }
+    const actionLoginFacebook = async () => {
+        let result = await Api.facebookLogar();
+
+        if (result){
+            onReceiveFacebook(result.user);
+        }
+        else {
+            alert ('Error');
+        }
+    }
+
+
 
     return (
         <BrowserRouter>
@@ -48,13 +72,13 @@ export default () => {
                <Route exact path = "*">
                    <AreaLogin>
         <h1>Faça login na sua conta</h1>
-        <BtnDeFauIcons>
+        <BtnDeFauIcons onClick={actionLoginFacebook}>
             <FacebookIcon/>
             <div className ="center">
             Fazer login com o Facebook
             </div>
         </BtnDeFauIcons>
-        <BtnDeFauIcons>
+        <BtnDeFauIcons onClick={actionLoginGoogle}>
         <IoLogoGoogle/>
         <div className ="center">
             Fazer login com o Google
@@ -70,7 +94,7 @@ export default () => {
             <div className="form--input">
                 <input name="senha" type="password" placholder="Password"></input>
             </div>
-            <BtnDeFau>
+            <BtnDeFau >
                 Entrar
             </BtnDeFau>
             <div className = "footerLogin">

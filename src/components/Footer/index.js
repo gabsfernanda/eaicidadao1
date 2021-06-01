@@ -15,13 +15,13 @@ function Footer (){
                       <Link to = "/"> <HomeIcon/></Link> 
                   </li>
                   <li>
-                      <Link to = "/config"> <AddCircleOutlineIcon/> </Link> 
+                      <Link to = "/"> <AddCircleOutlineIcon/> </Link> 
                   </li>
                   <li>
                       <Link to = "/"> <NotificationsActiveIcon/></Link> 
                   </li>
                   <li>
-                      <Link to = "/src/pages/Login/index.js"> <FaceIcon/> </Link> 
+                      <Link to = "/src/pages/Perfil/index.js"> <FaceIcon/> </Link> 
                   </li>
               </ul>
           </nav>

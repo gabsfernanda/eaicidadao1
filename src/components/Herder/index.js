@@ -16,7 +16,7 @@ function Header(){
           <nav>
           <ul>
               <li>
-                  <Link to = "/Home"> <MailOutlineIcon/> </Link>
+                  <Link to = "/"> <MailOutlineIcon/> </Link>
               </li>
           </ul>
       </nav>
