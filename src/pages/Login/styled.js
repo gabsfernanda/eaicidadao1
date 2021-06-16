@@ -33,13 +33,15 @@ export const AreaLogin = styled.div`
               text-align: center;
               margin-bottom: 20px;
               padding: 10px;
-              font-size: 10px;
-              font-family: Arial, Helvetica, sans-serif;
+              font-size: 12px;
+              font-family: "Noto Sans", "sans-serif";
               outline: none;
               border: 1px solid #ccc;
               border-radius: 5px;
               width: 230px;
               transition: 0.3s;
+              
+
 
               &:hover{
                   border: 1px solid #7d2ac8;

@@ -19,6 +19,10 @@ const Page = () => {
       <p>
         fala serio
       </p>
+      <p>
+         serio
+      </p>
+      <h1>mesmo, negocio chato</h1>
       </div>
       
     </ContainerPage>

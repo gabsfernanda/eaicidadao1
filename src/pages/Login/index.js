@@ -10,7 +10,8 @@ import { IoLogoGoogle } from "react-icons/io5";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default ({onReceiveGoogle}, {onReceiveFacebook}) => {
-
+    
+    //Login Google 
     const actionLoginGoogle = async () => {
         let result = await Api.googleLogar();
 
@@ -21,6 +22,8 @@ export default ({onReceiveGoogle}, {onReceiveFacebook}) => {
             alert ('Error');
         }
     }
+
+    //Login Facebook
     const actionLoginFacebook = async () => {
         let result = await Api.facebookLogar();
 
@@ -49,10 +52,8 @@ export default ({onReceiveGoogle}, {onReceiveFacebook}) => {
                    Crie sua conta, é grátis
                </p>
                <form>
-            <div className="form--input">
-                <input type="text" placeholder="Nome"></input>
-            </div>
-            <div className="form--input">
+            
+            <div className="form--input" >
                
                 <input type="email" placeholder="E-mail"></input>
             </div>
@@ -71,7 +72,7 @@ export default ({onReceiveGoogle}, {onReceiveFacebook}) => {
                </Route>
                <Route exact path = "*">
                    <AreaLogin>
-        <h1>Faça login na sua conta</h1>
+        <h1>Entrar</h1>
         <BtnDeFauIcons onClick={actionLoginFacebook}>
             <FacebookIcon/>
             <div className ="center">
@@ -92,7 +93,7 @@ export default ({onReceiveGoogle}, {onReceiveFacebook}) => {
                 <input name="email" type="email" placeholder="E-mail"></input>
             </div> 
             <div className="form--input">
-                <input name="senha" type="password" placholder="Password"></input>
+                <input name = "password" type="password" placeholder="Password"></input>
             </div>
             <BtnDeFau >
                 Entrar

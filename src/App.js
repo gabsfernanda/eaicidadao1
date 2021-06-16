@@ -31,7 +31,7 @@ function App() {
 
   if(user === null){
     return(
-      <Login onReceiveGoogle={actionLoginDataGoogle} onReceiveFacebook={actionLoginFacebook} />
+      <Login  onReceiveGoogle={actionLoginDataGoogle} onReceiveFacebook={actionLoginFacebook}/>
     );
   }
 
