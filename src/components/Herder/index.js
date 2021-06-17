@@ -1,5 +1,5 @@
-import {Link, Route, Switch} from 'react-router-dom';
-import Notificacoes from '../../pages/Notificacoes';
+import {Link} from 'react-router-dom';
+
 import React from 'react';
 import {AreaHeader} from './styled';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
@@ -18,9 +18,7 @@ function Header(){
           <ul>
               <li>
                   <Link to = "/Notificacoes" > <MailOutlineIcon/> </Link>
-                  <Switch>
-                    <Route path = "/Notificacoes" component = {Notificacoes} />
-                  </Switch>
+
               </li>
           </ul>
       </nav>

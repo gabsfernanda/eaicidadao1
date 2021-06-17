@@ -2,7 +2,7 @@ import React from 'react';
 import { ContainerPage, TitlePage } from '../../components/Main';
 import { AreaFeed } from './styled';
 
-const Page = () => {
+const Feed = () => {
   return (
         <AreaFeed>
         <div className="Feed">
@@ -25,4 +25,4 @@ const Page = () => {
         </AreaFeed>
       );
     }
-    export default Page;
+    export default Feed;

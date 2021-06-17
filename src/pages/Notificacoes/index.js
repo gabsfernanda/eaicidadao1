@@ -2,7 +2,7 @@ import React from 'react';
 import { ContainerPage, TitlePage } from '../../components/Main';
 import { AreaNoti } from './styled';
 
-const Page = () => {
+const Notificacao = () => {
   
   return (
         <AreaNoti>
@@ -26,4 +26,4 @@ const Page = () => {
         </AreaNoti>
       );
     }
-    export default Page;
+    export default Notificacao;

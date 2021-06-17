@@ -3,10 +3,12 @@ import { ContainerPage, TitlePage} from '../../components/Main';
 import { AreaPerfil } from './styled';
 
 
-const Page = () => {
+
+const Perfil = () => {
 
 
   return (
+    
     <AreaPerfil>
     <div className="perfil">
       
@@ -30,6 +32,7 @@ const Page = () => {
   
     </div>
     </AreaPerfil>
+    
   );
 }
-export default Page;
+export default Perfil;

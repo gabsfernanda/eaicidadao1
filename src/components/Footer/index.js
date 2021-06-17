@@ -1,14 +1,12 @@
 import React from 'react';
-import {Link, Route, Switch } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {AreaFooter} from './styled';
-import Home from '../../pages/Home';
-import Perfil from '../../pages/Perfil';
-import Feed from '../../pages/Feed';
-import Notificacoes from '../../pages/Notificacoes';
+
 import HomeIcon from '@material-ui/icons/Home';
 import FaceIcon from '@material-ui/icons/Face';
 import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
 import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+import MapIcon from '@material-ui/icons/Map';
 
 function Footer (){
     return(
@@ -16,24 +14,22 @@ function Footer (){
         <nav>
               <ul>
                   <li>
-                      <Link to = "/"> <HomeIcon/></Link> 
+                      <Link to = "/Home"> <HomeIcon/></Link> 
+                  </li>
+                  <li>
+                      <Link to = "/Mapa"> <MapIcon/></Link> 
                   </li>
                   <li>
                       <Link to = "/Feed"> <AddCircleOutlineIcon/> </Link> 
                   </li>
                   <li>
-                      <Link to = "/"> <NotificationsActiveIcon/></Link> 
+                      <Link to = "/Notificacoes"> <NotificationsActiveIcon/></Link> 
                   </li>
                   <li>
                       <Link to = "/Perfil"> <FaceIcon/> </Link> 
                   </li>
               </ul>
-              <Switch>
-                    <Route path = "/Home" component = {Home} />
-                    <Route path = "/Perfil" component = {Perfil} />
-                    <Route path = "/Feed" component = {Feed} />
-                    <Route path = "/Notificacoes" component = {Notificacoes} />
-                  </Switch>              
+                    
           </nav>
         </AreaFooter>
     )

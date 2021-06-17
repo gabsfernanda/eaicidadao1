@@ -2,7 +2,7 @@ import React from 'react';
 import { ContainerPage, TitlePage } from '../../components/Main';
 
 
-const Page = () => {
+const Home = () => {
   return (
     <div className="home">
       
@@ -93,4 +93,4 @@ const Page = () => {
     </div>
   );
 }
-export default Page;
+export default Home;
