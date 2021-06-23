@@ -1,6 +1,6 @@
 import React from 'react';
 import { Switch, Route} from 'react-router-dom';
-import Home from './pages/Home';
+import Home from './pages/Home/PostList';
 import Perfil from './pages/Perfil';
 import Mapa from './pages/Mapa';
 import Feed from './pages/Feed';

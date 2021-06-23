@@ -5,14 +5,16 @@ export const AreaLogin = styled.div`
       background: 0px;
       padding: 30px;
       max-width: 300px;
-      margin-top: 100px;
-      margin-left: 35%;
+      margin-top: 102px;
+      margin-left: 36%;
       text-align: center;
       border-radius: 5px;
       box-shadow: 0px 0px 10px #7d2ac8;
+      width: 100% !important;
+      display: block !important;
 
       h1{
-          font-size: 24px;
+          font-size: 23px;
       }
       .organize{
           display: flex;
@@ -51,7 +53,7 @@ export const AreaLogin = styled.div`
       .footerLogin{
           font-size: 13px;
           text-align: center;
-          margin-top: 30px;
+          margin-top: 28px;
 
           a{
               font-weight: bold;

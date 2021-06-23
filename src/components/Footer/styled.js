@@ -2,25 +2,34 @@ import styled from 'styled-components';
 
 export const AreaFooter = styled.div`
 
-background-image: linear-gradient(to right, #fff, #fff);
-border-top: 1px solid #9370DB;
-text-align: center;
-padding:20px;
-font-size: 14px;
+  background: linear-gradient(to right, #fff, #fff);
+  border-top: 1px solid #9370DB;
+  text-align: center;
+  padding:13px;
+  font-size: 14px;
 
-bottom: 0 ;
-position: fixed;
-width: 100%;
+  position: fixed;
+  flex:0.1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 98%;
+  flex-direction: row;
+
+  width: 100% !important;
+  display: block !important;
 
 .container{
-    padding: 5px 20px;
+    padding: 5px 28px;
     display: flex;
     align-items: center;
 
 }
-nav{      
+nav{   
+    margin-right: 9vw;
     ul{
         align-items: center;
+        block-size: auto;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -28,7 +37,7 @@ nav{
     }
     li{
         list-style: none;
-        margin-left:40px;
+        margin-left:32px;
 
         a{
             text-decoration: none;
@@ -42,5 +51,6 @@ nav{
         }
     }
 
+    
 
 `;

@@ -11,7 +11,7 @@ import MapIcon from '@material-ui/icons/Map';
 function Footer (){
     return(
         <AreaFooter>
-        <nav>
+        <nav >
               <ul>
                   <li>
                       <Link to = "/Home"> <HomeIcon/></Link> 
@@ -23,7 +23,7 @@ function Footer (){
                       <Link to = "/Feed"> <AddCircleOutlineIcon/> </Link> 
                   </li>
                   <li>
-                      <Link to = "/Notificacoes"> <NotificationsActiveIcon/></Link> 
+                      <Link to = "/Notificacoes"> <NotificationsActiveIcon className = "sino"/></Link> 
                   </li>
                   <li>
                       <Link to = "/Perfil"> <FaceIcon/> </Link> 

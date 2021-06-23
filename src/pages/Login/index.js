@@ -74,14 +74,14 @@ export default ({onReceiveGoogle}, {onReceiveFacebook}) => {
                    <AreaLogin>
         <h1>Entrar</h1>
         <BtnDeFauIcons onClick={actionLoginFacebook}>
-            <FacebookIcon/>
+            <FacebookIcon className="icon"/>
             <div className ="center">
             Fazer login com o Facebook
             </div>
         </BtnDeFauIcons>
         <BtnDeFauIcons onClick={actionLoginGoogle}>
-        <IoLogoGoogle/>
-        <div className ="center">
+        <IoLogoGoogle className="iconG"/>
+        <div className ="centerG">
             Fazer login com o Google
             </div>
         </BtnDeFauIcons>
